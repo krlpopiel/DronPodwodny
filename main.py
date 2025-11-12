@@ -3,7 +3,7 @@ import pynmea2
 import time
 import sys
 
-PORT = 'COM4'  
+PORT = 'COM3'  
 BAUDRATE = 9600
 PARITY = 'N'          
 STOPBITS = 1            
