@@ -256,12 +256,11 @@ int main(void)
 
   while (1)
   {
-    HAL_Delay(1000);
     uint16_t write_pos = RX_BUFFER_SIZE - __HAL_DMA_GET_COUNTER(&hdma_usart6_rx);
     if (read_pos == write_pos)
 		  		  {
 		  			  // Używamy Twojej funkcji do wysyłania
-		  			  usart_send(USART2, "Brak nowych danych.\r\n");
+		  			  //usart_send(USART2, "Brak nowych danych.\r\n");
 		  		  }
 
 		  		  // Przetwarzaj wszystkie nowe bajty z bufora DMA
@@ -305,8 +304,7 @@ int main(void)
 		  		  } // koniec pętli while(read_pos != write_pos)
 
 		  		  // Używamy Twojej funkcji do wysyłania
-		  		  usart_send(USART2, "Koniec odczytu danych GPS!\r\n");
-		  		  break;
+		  		  //usart_send(USART2, "Koniec odczytu danych GPS!\r\n");
 
     /* USER CODE END WHILE */
 

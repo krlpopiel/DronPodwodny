@@ -35,8 +35,9 @@ def choose_or_create_file():
     csv_writer = csv.writer(current_log_file)
 
     if new_file or os.path.getsize(filename) == 0:
-        csv_writer.writerow(["timestamp", "latitude", "longitude"])
-
+        #csv_writer.writerow(["timestamp", "latitude", "longitude"])
+        csv_writer.writerow(["timestamp", "dane"])
+3
 
 # -------------------------------
 # Wątek odczytu danych z GPS
@@ -54,22 +55,24 @@ def serial_reader_thread(ser):
             continue
 
         try:
+            """
             msg = pynmea2.parse(line)
 
             # Pobierz wartości GPS lub 0.0 jeśli brak fixa
             lat = getattr(msg, 'latitude', 0.0) or 0.0
             lon = getattr(msg, 'longitude', 0.0) or 0.0
-
+            """
             if is_logging and csv_writer:
                 with writer_lock:
-                    csv_writer.writerow([datetime.now().isoformat(), lat, lon])
+                    #csv_writer.writerow([datetime.now().isoformat(), lat, lon])
+                    csv_writer.writerow([datetime.now().isoformat(), line])
                     current_log_file.flush()
 
         except:
             # W przypadku błędu parsowania zapisujemy 0,0
             if is_logging and csv_writer:
                 with writer_lock:
-                    csv_writer.writerow([datetime.now().isoformat(), 0.0, 0.0])
+                    #csv_writer.writerow([datetime.now().isoformat(), 0.0, 0.0])
                     current_log_file.flush()
 
 
