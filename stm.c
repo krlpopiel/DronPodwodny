@@ -253,9 +253,20 @@ int main(void)
   static char line_buffer[128];
   static uint16_t line_idx = 0;
   static uint8_t found_start = 0;
+  uint32_t last_ok_tick = 0;  // Zapamiętuje czas ostatniego wysłania "OK"
+  const uint32_t OK_INTERVAL = 2000; // Interwał w milisekundach (np. 2000ms = 2s)
 
   while (1)
   {
+
+	  if (HAL_GetTick() - last_ok_tick >= OK_INTERVAL)
+	      {
+	          // Wyślij komunikat
+	          usart_send(USART2, "OK\r\n");
+
+	          // Zaktualizuj czas ostatniego wysłania na aktualny
+	          last_ok_tick = HAL_GetTick();
+	      }
     uint16_t write_pos = RX_BUFFER_SIZE - __HAL_DMA_GET_COUNTER(&hdma_usart6_rx);
     if (read_pos == write_pos)
 		  		  {
