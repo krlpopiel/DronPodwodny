@@ -1,0 +1,154 @@
+{
+  "nazwa": "Trasa testowa - Na uczelnie",
+  "opis": "Moja tradycyjna trasa do uczelni",
+  "utworzono": "2026-01-12T20:40:00",
+  "punkty": [
+    {
+      "id": 1,
+      "lat": 54.11058,
+      "lon": 19.25109,
+      "nazwa": "Start - dom",
+      "odwiedzony": false
+    },
+    {
+      "id": 2,
+      "lat": 54.182920,
+      "lon": 19.419663,
+      "nazwa": "Punkt1",
+      "odwiedzony": false
+    },
+    {
+      "id": 3,
+      "lat": 54.182984,
+      "lon": 19.423173,
+      "nazwa": "Punkt2",
+      "odwiedzony": false
+    },
+    {
+      "id": 4,
+      "lat": 54.177900,
+      "lon": 19.422200,
+      "nazwa": "Punkt3",
+      "odwiedzony": false
+    },
+    {
+      "id": 5,
+      "lat": 54.177800,
+      "lon": 19.423842,
+      "nazwa": "Punkt4",
+      "odwiedzony": false
+    },
+    {
+      "id": 6,
+      "lat": 54.177681,
+      "lon": 19.426489,
+      "nazwa": "Punkt5",
+      "odwiedzony": false
+    },
+    {
+      "id": 7,
+      "lat": 54.175275,
+      "lon": 19.426333,
+      "nazwa": "Punkt6",
+      "odwiedzony": false
+    },
+    {
+      "id": 8,
+      "lat": 54.173316,
+      "lon": 19.424219,
+      "nazwa": "Punkt7",
+      "odwiedzony": false
+    },
+    {
+      "id": 9,
+      "lat": 54.167539,
+      "lon": 19.42366,
+      "nazwa": "Punkt8",
+      "odwiedzony": false
+    },
+    {
+      "id": 10,
+      "lat": 54.165425,
+      "lon": 19.425046,
+      "nazwa": "Punkt9",
+      "odwiedzony": false
+    },
+    {
+      "id": 11,
+      "lat": 54.165173,
+      "lon": 19.425987,
+      "nazwa": "Punkt10",
+      "odwiedzony": false
+    },
+    {
+      "id": 12,
+      "lat": 54.165173,
+      "lon": 19.425987,
+      "nazwa": "Punkt11",
+      "odwiedzony": false
+    },
+    {
+      "id": 13,
+      "lat": 54.164067,
+      "lon": 19.428567,
+      "nazwa": "Punkt12",
+      "odwiedzony": false
+    },
+    {
+      "id": 14,
+      "lat": 54.160248,
+      "lon": 19.427170,
+      "nazwa": "Punkt13",
+      "odwiedzony": false
+    },
+    {
+      "id": 15,
+      "lat": 54.158685,
+      "lon": 19.427546,
+      "nazwa": "Punkt14",
+      "odwiedzony": false
+    },
+    {
+      "id": 16,
+      "lat": 54.158711,
+      "lon": 19.425674,
+      "nazwa": "Punkt15",
+      "odwiedzony": false
+    },
+    {
+      "id": 17,
+      "lat": 54.154220,
+      "lon": 19.423541,
+      "nazwa": "Punkt16",
+      "odwiedzony": false
+    },
+    {
+      "id": 18,
+      "lat": 54.153427,
+      "lon": 19.427547,
+      "nazwa": "Punkt17",
+      "odwiedzony": false
+    },
+    {
+      "id": 19,
+      "lat": 54.149635,
+      "lon": 19.425624,
+      "nazwa": "Punkt18",
+      "odwiedzony": false
+    },
+    {
+      "id": 20,
+      "lat": 54.148201,
+      "lon": 19.430008,
+      "nazwa": "Punkt19",
+      "odwiedzony": false
+    },
+    {
+      "id": 21,
+      "lat": 54.148104,
+      "lon": 19.431052,
+      "nazwa": "Finisz",
+      "odwiedzony": false
+    }
+  ]
+}
